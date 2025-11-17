@@ -1,12 +1,74 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="color-scheme" content="light dark" />
+	%sveltekit.head%
+	<style>
+		:root {
+			--bg-color: #ffffff;
+			--text-color: #333333;
+			--text-secondary: #666666;
+			--border-color: #dddddd;
+			--card-bg: #f9f9f9;
+			--card-header-bg: #e9e9e9;
+			--input-bg: #ffffff;
+			--code-bg: #2d2d2d;
+			--code-text: #f8f8f2;
+			--preview-bg: #ffffff;
+			--error-bg: #fee;
+			--error-border: #fcc;
+			--error-text: #c33;
+		}
+
+		:root[data-theme="dark"] {
+			--bg-color: #1a1a1a;
+			--text-color: #e0e0e0;
+			--text-secondary: #a0a0a0;
+			--border-color: #404040;
+			--card-bg: #242424;
+			--card-header-bg: #2a2a2a;
+			--input-bg: #2d2d2d;
+			--code-bg: #1e1e1e;
+			--code-text: #d4d4d4;
+			--preview-bg: #2d2d2d;
+			--error-bg: #3d1f1f;
+			--error-border: #5d2f2f;
+			--error-text: #ff6b6b;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root:not([data-theme]) {
+				--bg-color: #1a1a1a;
+				--text-color: #e0e0e0;
+				--text-secondary: #a0a0a0;
+				--border-color: #404040;
+				--card-bg: #242424;
+				--card-header-bg: #2a2a2a;
+				--input-bg: #2d2d2d;
+				--code-bg: #1e1e1e;
+				--code-text: #d4d4d4;
+				--preview-bg: #2d2d2d;
+				--error-bg: #3d1f1f;
+				--error-border: #5d2f2f;
+				--error-text: #ff6b6b;
+			}
+		}
+
+		body {
+			margin: 0;
+			background: var(--bg-color);
+			color: var(--text-color);
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+	</style>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>

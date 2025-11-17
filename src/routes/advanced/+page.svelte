@@ -119,27 +119,28 @@ const operations = [
 		text-align: center;
 		font-size: 2rem;
 		margin-bottom: 0.5rem;
-		color: #333;
+		color: var(--text-color);
 	}
 
 	h2 {
 		font-size: 1.5rem;
 		margin-top: 2rem;
 		margin-bottom: 0.5rem;
-		color: #555;
+		color: var(--text-color);
 	}
 
 	p {
 		text-align: center;
-		color: #666;
+		color: var(--text-secondary);
 		margin-bottom: 2rem;
 	}
 
 	section {
 		margin-bottom: 3rem;
 		padding: 1.5rem;
-		background: #f9f9f9;
+		background: var(--card-bg);
 		border-radius: 8px;
+		border: 1px solid var(--border-color);
 	}
 
 	section p {
@@ -150,21 +151,22 @@ const operations = [
 
 	.barcode-display {
 		padding: 2rem;
-		background: white;
-		border: 2px solid #e0e0e0;
+		background: var(--preview-bg);
+		border: 2px solid var(--border-color);
 		border-radius: 4px;
 		text-align: center;
 		overflow-x: auto;
 	}
 
 	pre {
-		background: #2d2d2d;
-		color: #f8f8f2;
+		background: var(--code-bg);
+		color: var(--code-text);
 		padding: 1rem;
 		border-radius: 4px;
 		overflow-x: auto;
 		font-size: 0.85rem;
 		line-height: 1.5;
+		border: 1px solid var(--border-color);
 	}
 
 	code {

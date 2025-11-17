@@ -206,11 +206,12 @@
 		text-align: center;
 		font-size: 2rem;
 		margin-bottom: 0.5rem;
+		color: var(--text-color);
 	}
 
 	.subtitle {
 		text-align: center;
-		color: #666;
+		color: var(--text-secondary);
 		margin-bottom: 1rem;
 		font-size: 0.95rem;
 	}
@@ -243,6 +244,10 @@
 		padding: 0.5rem;
 		margin-top: 0.25rem;
 		box-sizing: border-box;
+		background: var(--input-bg);
+		color: var(--text-color);
+		border: 1px solid var(--border-color);
+		border-radius: 4px;
 	}
 
 	input[type='color'] {
@@ -250,9 +255,10 @@
 		height: 2.5rem;
 		margin-top: 0.25rem;
 		padding: 0.25rem;
-		border: 1px solid #ddd;
+		border: 1px solid var(--border-color);
 		border-radius: 4px;
 		cursor: pointer;
+		background: var(--input-bg);
 	}
 
 	label {
@@ -275,25 +281,26 @@
 	.preview {
 		margin-top: 2rem;
 		padding: 1rem;
-		border: 1px solid #ddd;
-		background: #fff;
+		border: 1px solid var(--border-color);
+		background: var(--preview-bg);
 		text-align: center;
 	}
 
 	.error {
 		padding: 0.75rem;
-		background: #fee;
-		border: 1px solid #fcc;
+		background: var(--error-bg);
+		border: 1px solid var(--error-border);
 		border-radius: 4px;
-		color: #c33;
+		color: var(--error-text);
 		margin-top: 0.5rem;
 	}
 
 	.code-section {
 		margin-top: 2rem;
-		background: #f9f9f9;
+		background: var(--card-bg);
 		border-radius: 8px;
 		overflow: hidden;
+		border: 1px solid var(--border-color);
 	}
 
 	.code-header {
@@ -301,14 +308,14 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 1.5rem;
-		background: #e9e9e9;
-		border-bottom: 1px solid #ddd;
+		background: var(--card-header-bg);
+		border-bottom: 1px solid var(--border-color);
 	}
 
 	.code-header h2 {
 		margin: 0;
 		font-size: 1.1rem;
-		color: #333;
+		color: var(--text-color);
 	}
 
 	.copy-btn {
@@ -335,8 +342,8 @@
 		margin: 0;
 		padding: 1.5rem;
 		overflow-x: auto;
-		background: #2d2d2d;
-		color: #f8f8f2;
+		background: var(--code-bg);
+		color: var(--code-text);
 	}
 
 	.code-section code {
