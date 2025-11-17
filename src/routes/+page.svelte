@@ -74,7 +74,7 @@
 	<div class="controls">
 		<label>
 			Value
-			<input type="text" bind:value placeholder="Enter barcode value" />
+			<input type="text" bind:value placeholder="Enter barcode value" maxlength="50" />
 		</label>
 
 		<div class="grid">
@@ -116,12 +116,12 @@
 		<div class="grid">
 			<label>
 				Width
-				<input type="number" bind:value={width} />
+				<input type="number" bind:value={width} min="1" max="10" />
 			</label>
 
 			<label>
 				Height
-				<input type="number" bind:value={height} />
+				<input type="number" bind:value={height} min="20" max="200" />
 			</label>
 		</div>
 
@@ -156,7 +156,7 @@
 
 		<label>
 			Margin
-			<input type="number" bind:value={margin} min="0" max="50" />
+			<input type="number" bind:value={margin} min="0" max="30" />
 		</label>
 
 		{#if !valid && errorMessage}
@@ -290,6 +290,8 @@
 		border: 1px solid var(--border-color);
 		background: var(--preview-bg);
 		text-align: center;
+		overflow-x: auto;
+		max-width: 100%;
 	}
 
 	.error {
