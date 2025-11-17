@@ -1,5 +1,6 @@
 <!-- src/routes/+page.svelte -->
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Barcode } from '$lib/index.ts';
 	import type { BarcodeFormat } from '$lib/index.ts';
 
@@ -67,7 +68,7 @@
 	<p class="subtitle">Interactive demo of svelte-barcode-gen</p>
 
 	<div class="nav-links">
-		<a href="/advanced">View Advanced Examples →</a>
+		<a href="{base}/advanced">View Advanced Examples →</a>
 	</div>
 
 	<div class="controls">

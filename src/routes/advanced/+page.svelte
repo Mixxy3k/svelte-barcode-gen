@@ -1,5 +1,6 @@
 <!-- Advanced example demonstrating the chaining API -->
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { BarcodeAdvanced } from '$lib/index.ts';
 	import type { ChainedOperation } from '$lib/BarcodeAdvanced.svelte';
 
@@ -102,7 +103,7 @@ const operations = [
 			></pre>
 	</section>
 
-	<a href="/" class="back-link">← Back to Basic Demo</a>
+	<a href="{base}/" class="back-link">← Back to Basic Demo</a>
 </div>
 
 <style>
