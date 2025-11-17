@@ -2,7 +2,7 @@
 	"name": "svelte-barcode-gen",
 	"version": "1.0.0",
 	"description": "Svelte 5 wrapper for JsBarcode - Generate barcodes with full TypeScript support!",
-	"author": "",
+	"author": "Mixxy3k",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
