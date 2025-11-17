@@ -110,6 +110,9 @@ const operations = [
 			📦 View on GitHub
 		</a>
 	</footer>
+</div>
+
+<style>
 	.container {
 		max-width: 800px;
 		margin: 2rem auto;
