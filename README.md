@@ -2,6 +2,8 @@
 
 A Svelte 5 wrapper for [JsBarcode](https://github.com/lindell/JsBarcode) - Generate barcodes in your Svelte applications with full TypeScript support.
 
+**[📺 Live Demo](https://mixxy3k.github.io/svelte-barcode-gen/)** | **[📦 GitHub Repository](https://github.com/Mixxy3k/svelte-barcode-gen)**
+
 ## Features
 
 - 🎯 Full TypeScript support with type definitions
@@ -191,7 +193,7 @@ import type {
 
 ## Examples
 
-Check out the `/src/routes/+page.svelte` file in this repository for a complete interactive demo with all options.
+Check out the **[live interactive demo](https://mixxy3k.github.io/svelte-barcode-gen/)** or view the source code in `/src/routes/+page.svelte` in the [GitHub repository](https://github.com/Mixxy3k/svelte-barcode-gen).
 
 ## Development
 

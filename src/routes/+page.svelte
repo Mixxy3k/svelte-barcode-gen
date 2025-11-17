@@ -192,6 +192,12 @@
 		</div>
 		<pre><code>{codeSnippet}</code></pre>
 	</div>
+
+	<footer>
+		<a href="https://github.com/Mixxy3k/svelte-barcode-gen" target="_blank" rel="noopener noreferrer">
+			📦 View on GitHub
+		</a>
+	</footer>
 </div>
 
 <style>
@@ -350,5 +356,31 @@
 		font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 		font-size: 0.9rem;
 		line-height: 1.6;
+	}
+
+	footer {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid var(--border-color);
+		text-align: center;
+	}
+
+	footer a {
+		color: #4a90e2;
+		text-decoration: none;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.75rem 1.5rem;
+		border: 1px solid #4a90e2;
+		border-radius: 8px;
+		transition: all 0.2s;
+	}
+
+	footer a:hover {
+		background: #4a90e2;
+		color: white;
+		transform: translateY(-2px);
 	}
 </style>
